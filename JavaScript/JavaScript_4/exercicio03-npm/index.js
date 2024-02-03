@@ -19,4 +19,4 @@ function Birthday(data_nascimento) {
   return `Seu próximo aniversário é dia ${nextBirthday} e hoje você possui ${ageToday} anos`;
 }
 
-console.log(`${Birthday("2002/01/10")}`);
+console.log(`${Birthday("2002/03/10")}`);
