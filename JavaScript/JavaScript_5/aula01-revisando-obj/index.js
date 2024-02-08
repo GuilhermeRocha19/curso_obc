@@ -8,7 +8,7 @@ function Book(tittle, pages, tags, author) {
   this.published = false;
   this.inStock = 0;
   this.addOnStock = function addOnStock(quantity) {
-    this.inStock += quantity;
+    this.inStock += quantity; 
   };
   this.save = function () {
     //salvar no banco de dados
