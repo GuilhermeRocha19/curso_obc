@@ -6,7 +6,7 @@ class Reservation {
     this.total = days * Reservation.baseFee
   }
 
-  static baseFee = 150
+  static #baseFee = 150
 
   static showBaseFee(){
     console.log(`Taxa base é R$${Reservation.baseFee}`)
