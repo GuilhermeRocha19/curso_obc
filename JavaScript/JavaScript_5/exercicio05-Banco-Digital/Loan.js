@@ -3,11 +3,11 @@ const Installments = require("./Installment")
 //emprestimo
 module.exports = class Loan{
     static #fee = 1.05
-    constructor(valueLoan, installments,numberInstallments){
+    constructor(valueLoan, installments){
         this.valueLoan = valueLoan
         this.installments = []
-        for(let i = 1 ; i <= installments; i++){
-            this.installments.push(new Installments((value* Loan.#fee) / installments, i ))
+        for (let i = 1; i <= installments; i++) {
+          this.installments.push(new Installments((valueLoan * Loan.#fee) / installments, i))
         }
 
         this.date = new Date()
